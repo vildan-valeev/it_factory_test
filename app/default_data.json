@@ -1,0 +1,113 @@
+Skipping virtualenv creation, as specified in config file.
+development ENV
+DEVELOPMENT ENV!!!!
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$uNIS0WiR7bxMCo4AA9FfrY$6E+I+Md2q+AIUOBmgG57rWlWjHEq6ZzaTPR72eXur4U=",
+        "last_login": "2022-05-23T14:26:58.298",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-23T14:26:49.572",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "shop.employee",
+    "pk": "08c42082-adc4-45a0-98ee-b30f3fcac45e",
+    "fields": {
+        "created": "2022-05-23T14:54:26.608",
+        "updated": "2022-05-23T14:54:26.608",
+        "name": "Себастьян Перейра - торговец черным деревом",
+        "phone": "898956532"
+    }
+},
+{
+    "model": "shop.employee",
+    "pk": "99735d61-20db-451d-8121-728793eb3844",
+    "fields": {
+        "created": "2022-05-23T14:53:42.659",
+        "updated": "2022-05-23T14:53:42.659",
+        "name": "Петя",
+        "phone": "89564321"
+    }
+},
+{
+    "model": "shop.employee",
+    "pk": "ff0ac886-e2c0-4d30-b86b-5cd180b56de3",
+    "fields": {
+        "created": "2022-05-23T14:53:35.908",
+        "updated": "2022-05-23T14:53:35.908",
+        "name": "Вася",
+        "phone": "89898989"
+    }
+},
+{
+    "model": "shop.market",
+    "pk": "2a34caa4-13c5-4c1e-90c5-75c322307631",
+    "fields": {
+        "created": "2022-05-23T14:56:21.360",
+        "updated": "2022-05-23T14:56:21.360",
+        "name": "Башспирт",
+        "employee": "99735d61-20db-451d-8121-728793eb3844"
+    }
+},
+{
+    "model": "shop.market",
+    "pk": "af381f3d-9d29-4e6b-86a0-2c269e0b11b6",
+    "fields": {
+        "created": "2022-05-23T14:56:11.610",
+        "updated": "2022-05-23T15:01:18.601",
+        "name": "Пятерочка",
+        "employee": "08c42082-adc4-45a0-98ee-b30f3fcac45e"
+    }
+},
+{
+    "model": "shop.market",
+    "pk": "ecb4097c-80ec-4880-a443-05a8636631fb",
+    "fields": {
+        "created": "2022-05-23T14:55:57.524",
+        "updated": "2022-05-23T14:55:57.524",
+        "name": "Магнит",
+        "employee": "ff0ac886-e2c0-4d30-b86b-5cd180b56de3"
+    }
+},
+{
+    "model": "shop.visit",
+    "pk": "5a097882-7f9a-4674-b784-c4597c47fef5",
+    "fields": {
+        "created": "2022-05-23T15:01:39.803",
+        "updated": "2022-05-23T15:01:39.803",
+        "market": "af381f3d-9d29-4e6b-86a0-2c269e0b11b6",
+        "latitude": 12.23,
+        "longitude": 23.34,
+        "visit_date": "2022-05-23T15:01:38"
+    }
+},
+{
+    "model": "shop.visit",
+    "pk": "c5c385c1-b983-40eb-8dfe-6095ba85f908",
+    "fields": {
+        "created": "2022-05-23T14:57:51.827",
+        "updated": "2022-05-23T14:57:51.827",
+        "market": "ecb4097c-80ec-4880-a443-05a8636631fb",
+        "latitude": 23.34,
+        "longitude": 23.343,
+        "visit_date": "2022-05-23T14:57:48"
+    }
+}
+]
