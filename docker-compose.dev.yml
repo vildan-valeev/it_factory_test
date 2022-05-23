@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: postgres
+    container_name: parser_db
+    hostname: parser_db
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./pg_data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - dgs
+
+  app:
+    container_name: parser_app
+    hostname: parser_app
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    entrypoint: /app/entrypoint.sh
+    env_file:
+      - .env.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/
+    networks:
+      - dgs
+    depends_on:
+      - db
+
+networks:
+  dgs:
+    driver: bridge
