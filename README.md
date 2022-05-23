@@ -49,11 +49,12 @@ $ docker exec -it app poetry run python manage.py loaddata default_data.json
 
 # TODO
 1. Убрать .env.dev из индекса (оставлен для тестового проекта)
+2. добавить валидаторы на поля моделей (ограничения долготы ,ширины) - по условия не требуется )))
 
 # Database dump/load
 ```shell
-$ docker exec -it app sh -c "poetry run python manage.py dumpdata --natural-foreign --natural-primary --exclude=contenttypes --exclude=auth.Permission --exclude=admin.logentry --exclude=sessions.session --indent 4 > default_data.json"
-docker exec -it app poetry run python manage.py loaddata default_data.json
+$ docker exec -it shop_app sh -c "poetry run python manage.py dumpdata --natural-foreign --natural-primary --exclude=contenttypes --exclude=auth.Permission --exclude=admin.logentry --exclude=sessions.session --indent 4 > default_data.json"
+docker exec -it shop_app poetry run python manage.py loaddata default_data.json
 ```
 ## Enter to container
 ```sh
