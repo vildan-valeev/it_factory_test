@@ -4,8 +4,8 @@ services:
 
   db:
     image: postgres
-    container_name: parser_db
-    hostname: parser_db
+    container_name: shop_db
+    hostname: shop_db
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
@@ -18,8 +18,8 @@ services:
       - dgs
 
   app:
-    container_name: parser_app
-    hostname: parser_app
+    container_name: shop_app
+    hostname: shop_app
     build:
       context: .
       dockerfile: app/Dockerfile
