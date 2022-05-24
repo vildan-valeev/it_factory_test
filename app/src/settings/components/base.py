@@ -108,7 +108,7 @@ USE_I18N = True
 USE_TZ = False
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR.joinpath('staticfiles')  # сбор всей статики в одну директорию для вебсервера nginx
+# STATIC_ROOT = BASE_DIR.joinpath('staticfiles')  # сбор всей статики в одну директорию для вебсервера nginx
 STATICFILES_DIRS = [
     BASE_DIR.joinpath("static"),  # указываем где еще может находиться статика помимо app/static/app/css/example.css
 ]
