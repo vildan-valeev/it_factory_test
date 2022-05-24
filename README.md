@@ -61,3 +61,8 @@ $ docker exec -it shop_app poetry run python manage.py loaddata default_data.jso
 $ docker exec -it <id container or name> bash
 $ docker exec -it <id container or name> poetry run <command>
 ```
+Линтер
+`docker exec -it shop_app poetry run flake8 .`
+
+Тесты
+`docker exec -it shop_app poetry run python manage.py test`
